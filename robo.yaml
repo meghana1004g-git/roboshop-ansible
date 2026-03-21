@@ -11,9 +11,9 @@
   tasks:
   - name: create ec2 instance
     amazon.aws.ec2_instance:
-      instance_type: "t3.micro"
-      security_group: "sg-0ba44c612d40aca57"
-      image_id: "ami-0220d79f3f480ecf5"
+      instance_type: t3.micro
+      security_group: sg-0ba44c612d40aca57
+      image_id: ami-0220d79f3f480ecf5
       name: "{{ item }}-{{ environment }}"
       tags:
         Project: roboshop
