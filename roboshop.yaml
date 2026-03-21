@@ -1,5 +1,5 @@
 - name: create ec2 and r53 records
-  hosts: localhost
+  hosts: all
   connection: local
   vars: 
    sg_id: sg-0ba44c612d40aca57
