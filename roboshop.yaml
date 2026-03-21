@@ -2,7 +2,7 @@
   hosts: all
   connection: local
   vars: 
-   sg_id: sg-048f7c0e81491caba
+   sg_id: sg-0ba44c612d40aca57
    ami_id: ami-0220d79f3f480ecf5
    env: dev 
    instances: 
