@@ -3,7 +3,7 @@
   become: Yes
   tasks:
   - name: enable nodejs 20
-    ansible.builtin.command: dnf module  enable nodejs:20
+    ansible.builtin.command: dnf module enable nodejs:20 -y
 
   - name: install nodejs
     ansible.builtin.dnf:
@@ -32,4 +32,5 @@
     ansible.builtin.unarchive:
        src: /tmp/catalogue.zip
        dest: /app
+       remote_src: yes   
     
