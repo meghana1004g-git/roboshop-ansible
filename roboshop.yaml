@@ -3,7 +3,7 @@
   hosts: all
   connection: local
   vars: 
-   sg_id: sg-0ba44c612d40aca57
+   sg_id: sg-06246ba6010f6de92
    ami_id: ami-0220d79f3f480ecf5
    domain_name: indurthi.online
    env: dev 
@@ -16,7 +16,7 @@
   tasks:
   - name: create ec2 instance
     amazon.aws.ec2_instance:
-      vpc_subnet_id: subnet-0430e34e03b503da0
+      vpc_subnet_id: subnet-06ede53586615ad44
       instance_type: "t3.micro"
       security_group: "{{ sg_id }}"
       image_id: "{{ ami_id }}"
